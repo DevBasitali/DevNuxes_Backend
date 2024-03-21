@@ -9,44 +9,25 @@ const userSchema = new Schema(
     },
     lastName: {
       type: String,
-      required: true,
     },
     email: {
       type: String,
       required: true,
     },
-    password: {
+    company: {
       type: String,
       required: true,
     },
-    message: {
+    service_required: {
       type: String,
+      required: true,
+    },
+    project_detils: {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }
 );
 
 module.exports = mongoose.model("User", userSchema);
-
-// const User
-
-// const mongoose = require('mongoose')
-// const Schema = mongoose.Schema
-
-// const UserSchema = new mongoose.Schema({
-//   email: {
-//     type: String,
-//     required: true
-//   },
-
-//   password: {
-//     type: String,
-//     required: true
-//   },
-
-//   message: {
-//     type: String,
-//   },
-// }, {timestamps: true})
-
-// module.exports = mongoose.model('UserForm', UserSchema)

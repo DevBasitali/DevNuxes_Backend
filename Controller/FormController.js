@@ -28,35 +28,3 @@ module.exports = {
 };
 
 
-// const UserForm = require("../Model/FormModel");
-// const mongoose = require("mongoose");
-
-// // Post_users
-// const PostUsers = async (req, res) =>{
-//     try {
-//         const newUser = await new User(req.body);
-//         const savedUser = await newUser.save();
-//         res.status(200).json(savedUser);
-//       } catch (error) {
-//         console.log('Error creating user:', error);
-//         res.status(400).json({ error: error.message });
-//       }
-// }
-
-// // User
-
-// // Get_all_users
-// const GetAllUsers = async (req, res) => {
-//   try {
-//     const users = await UserForm.find();
-//     res.json(users);
-//   } catch (error) {
-//     console.error("Error fetching users:", error);
-//     res.status(500).json({ error: "Server error" });
-//   }
-// };
-
-// module.exports = {
-//     GetAllUsers,
-//     PostUsers
-// };
