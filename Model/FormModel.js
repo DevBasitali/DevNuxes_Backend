@@ -18,11 +18,11 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    service_required: {
+    service: {
       type: String,
       required: true,
     },
-    project_detils: {
+    project: {
       type: String,
       required: true,
     },
